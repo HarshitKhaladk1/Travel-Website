@@ -1,0 +1,450 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #333;
+ /* font-family: "Poppins", Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+   background: white; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+/* .destination {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #e3f2fd;
+  border-left: 5px solid #007bff;
+} */
+.destination h2 {
+  margin: 0;
+  color: #007bff;
+}
+.destination p {
+  margin: 5px 0 0;
+}
+.destination h3{
+  font-size: 25px;
+}
+.destination .country{
+  display: flex;
+  gap: 30px;
+}
+.hero {
+  background: url('https://th.bing.com/th/id/R.2d6f7c04ffe7247638f373ed3e6b3e86?rik=ppRLbSBJOs8k2A&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f02%2f131216venice-italy-677483.jpg&ehk=nwejicY3%2fJO7V8%2faIJOiLE2uqUj7rlJI2E4qPjJvuFs%3d&risl=&pid=ImgRaw&r=0') center center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+
+.hero .btn {
+  text-decoration: none;
+  color: white;
+  background-color: #163321;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.destination-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+/* .card  {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 7;} */
+
+.more {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.newsletter{
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  height: 200px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #faa61a;
+}
+
+.newsletter .heading{
+ justify-content: left;
+ margin-left: 40px;
+}
+
+.subs {
+  text-align: center;
+   align-items: center;
+ }
+
+ .subs input{
+   height: 50px;
+   width: 300px;
+   /* border-radius: 10px; */
+   border: none;
+   /* box-shadow:0 2px 5px #333; */
+ }
+
+ .subs button{
+   height: 50px;
+   /* width: 100px; */
+   font-size: 20px;
+   width: 60px;
+   border: none;
+   /* border-radius: 10px; */
+   font-size: 15px;
+ }
+
+/* .subs input {
+  padding: 10px;
+  width: 300px;
+  /* border-radius: 10px; */
+  /* border: 1px solid #ccc; 
+} */
+
+footer {
+  background: url('https://img.freepik.com/free-photo/photo-wall-texture-pattern_58702-14963.jpg') no-repeat center center/cover  ;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+footer .quicklinks a{
+ text-decoration: none;
+ color: white;
+}
+
+ .review-content {
+  display: flex;
+  font-size: 15px;
+  /* color: #000000; */
+  gap: 20px;
+ }
+ .review-content a{
+  text-decoration: none;
+  color: #000000;
+ }
+ .review-content .days{
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.newsletter .heading h1{
+  font-size:40px;
+}
+
+.prise {
+  background-color: #000000;
+  color:white;
+  text-decoration: none;
+ border-radius: 10px;
+  padding: 10px 18px 4px 18px;
+}
+
+.booking h1{
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+}
+
+.booking p{
+  font-size: 25px;
+  text-align: center;
+}
+
+.bookingdetail{
+  display: flex;
+  gap: 20px;
+  background-color: #29797e;
+  height:100px;
+  color: #000000;
+  align-items: center;
+  justify-content: center;
+text-align: center;
+}
+
+.bookingdetail input{
+  height: 50px;
+  width: 100px;
+  border: none;
+
+}
+
+.bookingdetail .city,.searchs{
+  height: 50px;
+  width: 100px;
+}
+
+.bookingdetail .searchs{
+  background-color: rgb(5, 70, 70);
+  color: white;
+  border: none;
+font-size: larger;
+}
+
+.bookingdetail select ,.bookingdetail .classess{
+  height: 50px;
+  width: 100px;
+  border: none;
+  
+}
+
+.bookingdetail .adult,.bookingdetail .child {
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.bookingdetail .adult select,.bookingdetail .child select{
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  border: none;
+}
+
+.blog h1{
+  text-align: center;
+  color: #000000;
+  font-size: 50px;}
+
+.blogcard{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 20px; */
+}
+
+.content-section h3{
+  font-size: 30px;
+  color: #000000;
+}
+
+
+/* .blog h1{
+  align-items: center;
+  text-align: center;
+}
+.blog .blog-card .bcard {
+lex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  f */
+
+.location-content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col-content{
+  position: relative;
+  filter:brightness(95%);
+  transition: all 0.3s cubic-bezier(0.445,0.05,0.55,0.95);
+} 
+
+.col-content img{
+  margin-bottom: 40px;
+  height: 350px;
+  border-radius: 15px;
+  width: 250px;
+  }
+
+.col-content h5{
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  left: 20px;
+  bottom: 105px;
+  cursor: pointer;
+}
+
+.col-content p{
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  left: 20px;
+  bottom: 80px;
+  cursor: pointer;
+}
+
+.features{
+  display: flex;
+  gap: 10px;
+  
+  background-color: #faa61a;
+}
+.features .featuresfirst{
+  width: 300px;
+
+  height: 250px;
+  text-align: center;
+  color: #000000;
+  background-color: #faa61a;
+}
+
+.features .featuresfirst i{
+  text-align: center;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+
+.whyus {
+  width: 1000px;
+  display: flex;
+  margin-left:10px;
+  height: 400px;
+  gap: 100px;
+}
+
+.whyus .whyusfirst {
+  height: 200px;
+  width: 500px;
+}
+.whyus .whyusfirst h2 {
+  font-size: 35px;
+}
+
+.whyus .whyussecond{
+  width: 500px;
+
+}
+.whyus .whyussecond h2{
+  font-size: 35px;
+}
+
+
+.result {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #0077cc;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+.bill-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff7a00;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#savedBillPopup {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  font-size: 16px;
+}
