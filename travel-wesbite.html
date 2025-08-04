@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>WanderWays - Explore the World</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="uitravel.css">
+    <link rel="stylesheet" href="blog.css" title="" type="" />
+    <link rel="stylesheet" href="travel.css">
+</head>
+
+<body>
+    <header>
+        <h1>WanderWays</h1>
+        <nav>
+            <a href="travel-destinations.html">Destinations</a>
+            <a href="travel-booking.html">Booking</a>
+            <a href="travel-review.html">Reviews</a>
+            <a href="travel-contactus.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Discover the World with Purpose</h2>
+        <p>Explore breathtaking destinations, travel sustainably, and experience adventures like never before.</p>
+        <a href="#" class="btn">Start Exploring</a>
+    </section>
+    <section>
+        <div class="booking">
+            <h1>Find a Tour</h1>
+            <p>Where would you like to go?</p>
+            <div class="bookingdetail" style="display: flex; align-items: center;">
+                <!-- select country -->
+                <div class="where">
+                    <select name="city" class="city">
+                        <option value="">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="France">France</option>
+                        <option value="USA">USA</option>
+                        <option value="Portugal"> Portugal</option>
+                        <option value="Indonesia"> Indonesia</option>
+                        <option value="germany"> Germany</option>
+                        <option value="spain"> spain</option>
+                        <option value="italy"> Italy</option>
+                    </select>
+                </div>
+                <!-- starting date -->
+                <div class="from">
+                    <input type="date">
+                </div>
+                <div class="duration">
+                    <select name="duration" class="durations">
+                        <option value> Duration</option>
+                        <option value>1</option>
+                        <option value>2</option>
+                        <option value>3</option>
+                        <option value>4</option>
+                        <option value>5</option>
+                        <option value>6</option>
+                        <option value>7</option>
+                        <option value>8</option>
+                        <option value>9</option>
+                        <option value>10</option>
+                    </select>
+                </div>
+                <!-- class -->
+                <div class="classes">
+                    <select name="classes" id="classes" class="classess">
+                        <option value="Economy">Economy</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                
+                <div class="adult" style="display: flex;">
+                    <!-- <p>Adult</p> -->
+                    <select name="adult" id="adult">
+                        <option value>Adult</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="child" style="display: flex;">
+                    <!-- <p>Child</p> -->
+                    <select name="child" id="child">
+                        <option value> Child</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        
+                    </select>
+                </div>
+                <!-- search button -->
+                <div class="search">
+                    
+                    <button class="searchs" onclick="showCities()">Search</button>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <div id="cityCards" class="destination-cards"></div>
+    
+    <div id="bookingForm" class="container" style="display:none;">
+        <h2>Book Your Trip</h2>
+        <form>
+            <label for="name">Full Name:</label><br />
+            <input type="text" id="name" required /><br /><br />
+            
+            <label for="address">Address:</label><br />
+            <input type="text" id="address" required /><br /><br />
+            
+            <label for="aadhaar">Aadhaar Number:</label><br />
+            <input type="text" id="aadhaar" required /><br /><br />
+            
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" required /><br /><br />
+            
+            <label for="document">Upload ID Proof (PDF/Image):</label><br />
+            <input type="file" id="document" accept=".pdf,.jpg,.png" required /><br /><br />
+            
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+    </div>
+    
+    <section id="destinations" class="content-section">
+        <center>
+            <h3>Popular Destinations</h3>
+        </center>
+        <div class="destination-cards">
+            
+            <div class="card">
+                <img src="https://www.aparisguide.com/eiffeltower/eiffel-tower002.jpg" alt="Paris skyline with Eiffel Tower at sunset">
+                <a class="prise">$500</a>
+                <h4>Paris, France</h4>
+                <p>The City of Light offers an enchanting mix of art, history, and romance.</p>
+                <br><br>
+                <div class="review-content">
+                    <p>
+                    <div class="review">
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <a>(45 Review)</a>
+                    </div>
+                    <div class="days">
+                        <i class="fa fa-clock-o"></i>
+                        <a>5 Days</a>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg" alt="Bali beach with clear turquoise water and palm trees">
+                <a class="prise">$500</a>
+                <h4>Bali, Indonesia</h4>
+                <p>Experience the lush jungles, serene beaches, and vibrant culture of Bali.</p>
+                <div class="review-content">
+                    <p>
+                    <div class="review">
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <a>(20 Review)</a>
+                    </div>
+                    <div class="days">
+                        <i class="fa fa-clock-o"></i>
+                        <a>5 Days</a>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.travelguide.net/media/new-york.jpeg" alt="New York City">
+                <a class="prise">$500</a>
+                <h4>New York, USA</h4>
+                <p>Embrace the dynamic lifestyle, cultural attractions, and iconic landmarks of NYC.</p>
+                <div class="review-content">
+                    <p>
+                    <div class="review">
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <a>(20 Review)</a>
+                    </div>
+                    <div class="days">
+                        <i class="fa fa-clock-o"></i>
+                        <a>5 Days</a>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg" alt="Rome with ancient ruins and Colosseum">
+                <h4>Rome, Italy</h4>
+                <p>Explore ancient ruins, vibrant piazzas, and the rich history of the Eternal City.</p>
+            </div>  -->
+        </div>
+        
+        <div class="more">
+            <a href="#"> <button> <span>More Destinations</span>
+                </button></a>
+        </div>
+    </section>
+    
+    <section>
+        <div class="features">
+            <div class="featuresfirst">
+                <br> <br> <i class='bx bx-dollar'></i> <br>
+                <h3>Best Price Guarantee</h3>
+                <p> Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+            </div>
+            <div class="featuresfirst">
+                <br> <br> <i class='bx bxs-lock-alt'></i> <br>
+                <h3>Safe and Secure</h3>
+                <p> Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+            </div>
+            <div class="featuresfirst">
+                <br> <br> <i class='bx bxs-like'></i> <br>
+                <h3> Best Travel Agents</h3>
+                <p> Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+            </div>
+            <div class="featuresfirst">
+                <br> <br> <i class='bx bx-menu'></i> <br>
+                <h3>Travel Guidelines</h3>
+                <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="blog">
+        <h1>Learn more about Tours</h1>
+        
+        
+        
+        
+        
+        
+        <div class="blog-container">
+            
+            <p class="intro">Get inspired by travel stories, tips, and guides from around the world. Discover hidden gems, plan smarter, and wander better!</p>
+            
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach in Maldives">
+                    <h3>Top 5 Island Destinations for 2025</h3>
+                    <p>Explore the most breathtaking island getaways for your next vacation. From the Maldives to Bora Bora, here's where to escape this year.</p>
+                    <a href="#">Read More →</a>
+                </div>
+                
+                <div class="blog-post">
+                    <img src="https://i0.wp.com/andershusa.com/wp-content/uploads/2024/09/feature-where-to-eat-in-kyoto-japan-city-guide-and-map-of-the-best-restaurants-review-food-foodie-eat-eating-out-dine-dining-top-spots-places-tips-recommendation-travel-1-2023.jpg?fit=500%2C333&ssl=1" alt="Kyoto Japan">
+                    <h3>A Soulful Journey Through Kyoto, Japan</h3>
+                    <p>Experience temples, tradition, and the taste of Japanese culture as we guide you through Kyoto’s most serene spots.</p>
+                    <a href="#">Read More →</a>
+                </div>
+                
+                <div class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Australian Road Trip">
+                    <h3>Planning the Perfect Australian Road Trip</h3>
+                    <p>Hop in and hit the road! From the Great Ocean Road to outback adventures, here’s how to road trip across Australia like a pro.</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <a href="C:\Users\mirac\OneDrive\Desktop\HarshitK\blog.html"><button><span>More Blogs</span></button></a>
+        </div>
+    </section>
+    <section>
+        <div class="whyus">
+            <div class="whyusfirst">
+                <h2>Why Choose Us?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit nostrum illo dolores asperiores deserunt laudantium quos voluptatibus natus corrupti deleniti iste consectetur unde, tempore repudiandae, minus sapiente ut. Debitis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit, odio quidem ratione dolor unde illum ea itaque accusantium distinctio magnam nobis id nostrum quaerat delectus consequuntur vel iusto perspiciatis.</p>
+                <button class="btn"> Read More
+                </button>
+                <br>
+            </div>
+            <div class="whyussecond">
+                <h2>Testimonials</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A unde, eius iusto nobis expedita ratione perferendis quisquam aut harum quibusdam repudiandae enim, distinctio velit doloribus laboriosam voluptatum accusamus, perspiciatis doloremque?</p>
+                <h5>John </h5>
+            </div>
+        </div><br>
+    </section>
+    <section>
+        <div class="newsletter">
+            <div class="heading">
+                <h1> Subscribe our Newsletter</h1>
+                <!-- <p>Subscribe newsletter to get offers and about new places to discover.  </p> -->
+            </div>
+            <div class="subs">
+                <input type="email" placeholder="       E-mail">
+                <button><i class="fa fa-envelope"></i></button>
+            </div>
+        </div>
+    </section>
+    <div id="billBtn" class="bill-btn" onclick="showSavedBill()">💼 View My Bill</div>
+    <div class="form-popup" id="savedBillPopup"></div>
+    
+    <footer>
+        <div class="quicklinks">
+            <h3>Quick Links</h3>
+            <p><a href="travel-register.html">Register</a></p>
+            <p><a href="travel-aboutus.html">About Us</a></p>
+            <p><a href="travel-contactus.html">Contact Us</a></p>
+        </div>
+        <div class="destination">
+            <h3>Popular Destinations</h3>
+            <div class="country">
+                <div class="list1">
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>USA</p>
+                    <p>UK</p>
+                </div>
+                <div class="list1">
+                    <p>Switzerland</p>
+                    <p>Canada</p>
+                    <p>Australia</p>
+                    <p>France</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Feel free to reach out!</p>
+            <p> +01 (123) 4567 90</p>
+            <p> info@wanderways.com</p>
+            <p> 3146 Koontz, California</p>
+            
+            <div class="icon">
+                <i class="fa fa-instagram"> </i>
+                <i class="fa fa-youtube"> </i>
+                <i class="fa fa-twitter"> </i>
+                <i class="fa fa-facebook-square"> </i>
+                <i class="fa fa-linkedin"> </i>
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <div>
+            <p>Copyright ©2025 All rights reserved | This template is made with by WanderWays </p>
+        </div>
+    </footer>
+    <script src="travel.js"></script>
+    <!-- <script src="main.js"></script> -->
+</body>
+<script>
+    const citiesData = {
+        India: [
+            { name: "Delhi", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/India_Gate_in_New_Delhi_03-2016_img3.jpg/640px-India_Gate_in_New_Delhi_03-2016_img3.jpg" },
+            { name: "Mumbai", image: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mumbai_skyline_BWSL.jpg" },
+        ],
+        France: [
+            { name: "Paris", image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" },
+            { name: "Lyon", image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Lyon_vue_du_ciel_2.jpg" },
+        ],
+        USA: [
+            { name: "New York", image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Manhattan_Skyline_2008.jpg" },
+            { name: "Los Angeles", image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Los_Angeles_Skyline_Mountains2.jpg" },
+        ]
+    };
+    
+    function showCities() {
+        const country = document.getElementById("country").value;
+        const cardContainer = document.getElementById("cityCards");
+        cardContainer.innerHTML = "";
+        
+        if (!country || !citiesData[country]) {
+            cardContainer.innerHTML = "<p>Please select a country to view cities.</p>";
+            return;
+        }
+        
+        citiesData[country].forEach(city => {
+            const card = document.createElement("div");
+            card.classList.add("card");
+            card.innerHTML = `
+          <img src="${city.image}" alt="${city.name}" />
+          <h3>${city.name}</h3>
+          <button onclick="document.getElementById('bookingForm').style.display='block'">Book Trip</button>
+        `;
+            cardContainer.appendChild(card);
+        });
+    }
+</script>
+
+</html>
