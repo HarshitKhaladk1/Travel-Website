@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWays - Reviews</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<style type="text/css" media="all">
+  .review-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.write-review,
+.user-reviews {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.write-review h2,
+.user-reviews h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #005f73;
+}
+
+.review {
+    border-left: 4px solid #008cba;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.review h3 {
+    margin: 0;
+    color: #222;
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>WanderWays</h1>
+        <nav>
+            <a href="travel-website.html">Home</a>
+            <a href="travel-destinations.html">Destinations</a>
+            <a href="travel-booking.html">Booking</a>
+            <a href="travel-review.html" class="active">Reviews</a>
+            <a href="travel-contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="review-section">
+        <section class="write-review">
+            <h2>Share Your Experience</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="destination">Destination Visited:</label><br>
+                <input type="text" id="destination" name="destination" required><br><br>
+
+                <label for="rating">Rating:</label><br>
+                <select id="rating" name="rating" required>
+                    <option value="">Select Rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select><br><br>
+
+                <label for="comment">Your Review:</label><br>
+                <textarea id="comment" name="comment" rows="5" required></textarea><br><br>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section class="user-reviews">
+            <h2>What Our Travelers Say</h2>
+
+            <div class="review">
+                <h3>Riya Sharma – Bali, Indonesia</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>WanderWays made our honeymoon unforgettable! The arrangements, local guides, and views were beyond perfect.</p>
+            </div>
+
+            <div class="review">
+                <h3>Daniel Thompson – Swiss Alps</h3>
+                <p>⭐⭐⭐⭐</p>
+                <p>Excellent experience! Loved the planning and quick support from the team. Will surely travel again with WanderWays.</p>
+            </div>
+
+            <div class="review">
+                <h3>Sneha Patel – Manali, India</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>The trip was perfectly organized. Beautiful stay and a smooth experience. Thank you WanderWays!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="quicklinks">
+            <h3>Quick Links</h3>
+            <p><a href="travel-register.html">Register</a></p>
+            <p><a href="travel-aboutus.html">About Us</a></p>
+            <p><a href="travel-contactus.html">Contact Us</a></p>
+        </div>
+
+        <div class="destination">
+            <h3>Popular Destinations</h3>
+            <div class="country">
+                <div class="list1">
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>USA</p>
+                    <p>UK</p>
+                </div>
+                <div class="list1">
+                    <p>Switzerland</p>
+                    <p>Canada</p>
+                    <p>Australia</p>
+                    <p>France</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Feel free to reach out!</p>
+            <p>+01 (123) 4567 90</p>
+            <p>info@wanderways.com</p>
+            <p>3146 Koontz, California</p>
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <div>
+            <p>Copyright ©2025 All rights reserved | This template is made with ❤️ by WanderWays</p>
+        </div>
+    </footer>
+</body>
+</html>
